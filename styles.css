@@ -1,0 +1,88 @@
+:root{
+    --bg-primary: hsl(0, 0%, 8%);
+    --bg-secondary: hsl(0, 0%, 12%);
+    --text-primary: hsl(0, 0%, 100%);
+    --text-secondary: hsl(75, 94%, 57%);
+    --btn-color: hsl(0, 0%, 20%);
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 14px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--bg-secondary);
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.profile__image img{
+    border-radius: 50%;
+    width: 80px;
+}
+
+.profile__content h1{
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.profile__content span{
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: var(--text-secondary);
+}
+.profile__content p{
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+
+.social__links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.social__links button{
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 100%;
+    height: 40px;
+    background-color: var(--btn-color);
+    color: var(--text-primary);
+}
+.social__links button:hover,
+.social__links button:focus {
+    background-color: var(--text-secondary);
+    color: var(--bg-primary);
+    transition: all ease 0.3s;
+    cursor: pointer;
+}

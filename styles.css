@@ -79,8 +79,7 @@ body{
     background-color: var(--btn-color);
     color: var(--text-primary);
 }
-.social__links button:hover,
-.social__links button:focus {
+.social__links button:hover{
     background-color: var(--text-secondary);
     color: var(--bg-primary);
     transition: all ease 0.3s;
